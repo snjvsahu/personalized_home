@@ -1,0 +1,15 @@
+"""Stable reason codes returned with each ranked item."""
+
+from enum import StrEnum
+
+
+class ReasonCode(StrEnum):
+    """Human-readable codes explaining why an item was ranked as it was."""
+
+    ELIGIBLE_BUSINESS_PRIORITY = "ELIGIBLE_BUSINESS_PRIORITY"
+    ELIGIBLE_HIGH_PROPENSITY = "ELIGIBLE_HIGH_PROPENSITY"
+    ELIGIBLE_RECENT_ENGAGEMENT = "ELIGIBLE_RECENT_ENGAGEMENT"
+    ELIGIBLE_SEGMENT_MATCH = "ELIGIBLE_SEGMENT_MATCH"
+    FALLBACK_CATALOG_ORDER = "FALLBACK_CATALOG_ORDER"
+    FALLBACK_LOB_DEFAULT = "FALLBACK_LOB_DEFAULT"
+    INELIGIBLE_FILTERED = "INELIGIBLE_FILTERED"
